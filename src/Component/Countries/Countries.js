@@ -13,7 +13,20 @@ const Countries = () => {
     return (
         <div>
             <h2>Hello Countries: {countries.length}</h2>
-            
+            {
+                countries.map(
+                    country=>  
+                    // console.log(country)
+                    <Country 
+                    name={country.name.common}
+                    capital={country.capital}
+                    population={country.population}
+                    
+                    >
+
+                     </Country>
+                )
+            }
         </div>
     );
 };
