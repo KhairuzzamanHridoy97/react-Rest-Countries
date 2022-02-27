@@ -23,6 +23,26 @@ function Countries (){
     <div>
       <h2>Travel Around The World: </h2>
       <h4>Availabel Countries: {countries.length}</h4>
+      {
+        countries.map(
+          country=> <Country
+          // name={country.name}
+          // capital={country.capital}
+          country={country}
+          >
+          </Country>
+        )
+      }
+    </div>
+  )
+};
+
+function Country (props){
+  const {name,capital} = props.country
+  return(
+    <div>
+        {/* <h2>Name: {name[0]}</h2> */}
+        <h2>Capital: {capital}</h2>
     </div>
   )
 }
