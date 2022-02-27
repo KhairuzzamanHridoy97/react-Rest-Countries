@@ -15,7 +15,7 @@ const Countries = () => {
         <div >
             <div>
 
-                  <h2>Hello Countries: {countries.length}</h2>
+                  <h1 className='m-3'> React Rest Countries: {countries.length}</h1>
             </div>
             <div className='countries-container'>
 

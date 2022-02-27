@@ -4,12 +4,11 @@ import './Country.css';
 const Country = (props) => {
     const {name,population,capital,flags,region} = props.country
     return (
-        <div className='country'>
+        <div className='country bg-info'>
             <img src={flags.png} alt="" />
-            <h3>This is: {name.common}</h3>    {/* nested object er jonnon name er pore .common bosano hoiche */}
+            <h3 className='text-danger'>This is: {name.common}</h3>    {/* nested object er jonnon name er pore .common bosano hoiche */}
             <h5>Region: {region}</h5>
-            <p>Capital is : {capital} </p>
-            {/* <p>Population: {population}</p> */}
+            <p>Capital is : {capital} & Population: {population} </p>
         </div>
     );
 };
